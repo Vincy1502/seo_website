@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/3ef76d074a.js" crossorigin="anonymous"></script>
+    <style>
+        .head-bar {
+            height: 60px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+        .mail-box{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding-left: 15%;
+            color: rgb(104, 104, 104);
+            .e-mail{
+             text-decoration: none;
+             color: rgb(104, 104, 104);
+            }
+            img{
+                background-color:rgb(104, 104, 104) ;
+                border-radius: 50%;
+                padding: 7px;
+                height: 15px;
+            }
+
+            span:hover{
+            color: rgb(241, 15, 192);
+            cursor: pointer;
+        }
+        a:hover{
+            color: rgb(241, 15, 192);
+            cursor: pointer;
+        }
+        img:hover{
+            background-color: rgb(241, 15, 192);
+            cursor: pointer;
+        }
+    
+        
+        }
+       .icon-box{
+        display: flex;
+        gap: 10px;
+        padding-right: 15%;
+       }
+        .icons {
+            height: 15px;
+            padding: 7px;
+            border-radius: 50%;
+            background-color: rgb(151, 151, 151);
+
+            &:hover {
+                background-color: rgb(241, 15, 192);
+                border-radius: 50%;
+                cursor: pointer;
+            }
+        }
+        }
+
+        .nav-box{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            height: 80px;
+            width: 100%;
+            background-color: white;
+            color: black;
+            
+            .menu-items{
+                padding-right: 30px;
+                text-decoration: none;
+                color: black;
+                &:hover {
+                    color: rgb(241, 15, 192);
+                }
+            }
+
+        }
+
+        .btn {
+            background: none;
+            border: 1px rgb(241, 15, 192) solid;
+            padding: 10px;
+            border-radius: 25px;
+            &:hover{
+                background-color:rgb(241, 15, 192) ;
+                color: white;
+            }
+        }
+
+        .home {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            box-shadow: 0px -10px 10px -10px rgb(218, 216, 216);
+
+            .home-left {
+            background-image: url(images/slider-left-dec.png);
+            background-repeat: no-repeat;
+            height: 700px;
+            width: 649px;
+           
+            position: relative;
+        }
+
+        .home-content {
+            position: absolute;
+            top: 20%;
+            left: 20%;
+            font-size: 1.4rem;
+        }
+
+        .home-right {
+            background-image: url(images/slider-right-dec.png);
+            background-repeat: no-repeat;
+            height: 700px;
+            width: 700px;
+            /* box-shadow: 0px -10px black; */
+            position: relative;
+        }
+
+        .slider-img {
+            position: absolute;
+            top: 20%;
+            left: 5%;
+        }
+        }
+
+        .about {
+            display: flex;
+            justify-content: space-between;
+            font-size: 1.4rem;
+            flex-wrap: wrap;
+
+        .about-left{
+            height: 700px;
+            width: 500px;
+            position: relative;
+
+        }
+
+        .about-right {
+            position: relative;
+            height: 700px;
+            width: 700px;
+        }
+        .about-content {
+            position: absolute;
+            top:25%;
+           right: 10%;
+        }
+        .about-img{
+            position: absolute;
+            left: 10%;
+        }
+
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        p{ 
+            color: grey;
+            line-height: 30px;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="head-bar" style="background-color:rgba(207, 207, 207, 0.219);">
+        <div class="mail-box">
+            <img src="images/mail-2569.png" alt="msgbox">
+            <a href="mailto:antovincy1502@gmail.com" class="e-mail">antovincy1502@gmail.com</a>
+           <img src="images/phone-504.png" alt="phone">
+            <span>+91 63856-84520</span> 
+        </div>
+        <div class="icon-box"><img src="images/facebook.png" alt="fb" class="icons">
+            <img src="images/behance.png" alt="be" class="icons">
+            <img src="images/twitter.png" alt="twit" class="icons">
+            <img src="images/basketball.png" alt="ball" class="icons">
+        </div>
+    </header>
+    
+        <nav class="nav-bar">
+            <div class="nav-box">
+            <div class="logo">
+            <img src="images/logo-v1.png" alt="logo">
+            </div>
+            <div class="menus">
+                <a class="menu-items" href="#section1">Home</a>
+                <a class="menu-items" href="#section2">About</a>
+                <a class="menu-items" href="#">Services</a>
+                <a class="menu-items" href="#">Projects</a>
+                <a class="menu-items" href="#">Blog</a>
+                <a class="menu-items" href="#">Contact</a>
+                <button class="btn">Free Quote</button>
+            </div>
+            </div>
+        </nav>
+    
+    <div class="home" id="section1">
+        <div class="home-left">
+            <div class="home-content">
+                <h2 style="color: rgb(241, 15, 192);">Digital Media Agency</h2>
+                <h1>We Boost Your Website Traffic</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat architecto porro, nostrum ut cumque dolorum!</p>
+                <button class="btn">Free Quote</button>
+            </div>
+        </div>
+        <div class="home-right">
+            <div class="slider-img">
+                <img src="images/slider-dec.png" alt="slider image" height="450px">
+            </div>
+        </div>
+    </div>
+    <div class="about" id="section2">
+        <div class="about-left">
+            <div class="about-img">
+            <img src="images/about-dec.png" alt="about-img"></div>
+        </div>
+        <div class="about-right">
+            <div class="about-content">
+                <h4 style="color: rgb(83, 83, 250);">About Us</h4>
+                <h2 style="display: inline;">Who is DigiMedia</h2><h2 style="display: inline; color: rgb(83, 83, 250);"> Agency</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga porro tenetur iste nobis sit fugiat adipisci repudiandae dicta ipsa,
+                     deserunt recusandae asperiores quo expedita maxime libero deleniti iure quos molestiae.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
